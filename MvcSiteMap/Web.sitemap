@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<siteMap xmlns="http://schemas.microsoft.com/AspNet/SiteMap-File-1.0" >
+  <siteMapNode>
+    <siteMapNode title="Home">
+        <siteMapNode action="Index" controller="Home" title="Home" description="Home Page" />
+        <siteMapNode action="About" controller="Home" title="About" description="About MvcSiteMap" />
+    </siteMapNode>
+    <siteMapNode title="Account" description="Account Information" roles="user">
+      <siteMapNode action="ChangePassword" controller="Account" title="Change Password" description="Change Password" />    
+    </siteMapNode>
+    <siteMapNode title="Nested Pages">
+      <siteMapNode title="Item 1">
+        <siteMapNode title="Item 1.1" action="Item1.1" controller="NestedPages"/>
+        <siteMapNode title="Item 1.2" action="Item1.2" controller="NestedPages"/>
+        <siteMapNode title="Item 1.3" action="Item1.3" controller="NestedPages"/>
+      </siteMapNode>
+      <siteMapNode title="Item 2">
+        <siteMapNode title="Item 2.1" action="Item2.1" controller="NestedPages"/>
+        <siteMapNode title="Item 2.2" action="Item2.2" controller="NestedPages">
+          <siteMapNode title="Item 2.2.1" action="Item2.2.1" controller="NestedPages"/>
+        </siteMapNode>
+        <siteMapNode title="Item 2.3" action="Item2.3" controller="NestedPages"/>
+      </siteMapNode>
+      <siteMapNode title="Item 3">
+        <siteMapNode title="Item 3.1" action="Item3.1" controller="NestedPages">
+          <siteMapNode title="Item 3.1.1" action="Item3.1.1" controller="NestedPages"/>
+          <siteMapNode title="Item 3.1.2" action="Item3.1.2" controller="NestedPages">
+            <siteMapNode title="Item 3.1.2.1" action="Item3.1.2.1" controller="NestedPages"/>
+            <siteMapNode title="Item 3.1.2.2" action="Item3.1.2.2" controller="NestedPages"/>
+            <siteMapNode title="Item 3.1.2.3" action="Item3.1.2.3" controller="NestedPages"/>
+            <siteMapNode title="Item 3.1.2.4" action="Item3.1.2.4" controller="NestedPages"/>
+            <siteMapNode title="Item 3.1.2.5" action="Item3.1.2.5" controller="NestedPages"/>
+          </siteMapNode>
+          <siteMapNode title="Item 3.1.3" action="Item3.1.3" controller="NestedPages"/>
+        </siteMapNode>
+        <siteMapNode title="Item 3.2" action="Item3.2" controller="NestedPages"/>
+        <siteMapNode title="Item 3.3" action="Item3.3" controller="NestedPages"/>
+      </siteMapNode>      
+    </siteMapNode>
+  </siteMapNode>
+</siteMap>

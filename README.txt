@@ -1,0 +1,1 @@
+﻿Sample application for ASP.NET MVC xml sitemap provider
